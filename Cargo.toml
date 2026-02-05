@@ -1,0 +1,30 @@
+[package]
+name = "sphincsplus"
+description = "Bindings for the Reference-Implementation of SPHINCS+"
+version = "0.1.0"
+edition = "2024"
+build = "build.rs"
+license = "MIT"
+repository = "https://github.com/C0D3-M4513R/sphincsplus"
+
+[build-dependencies]
+cc = "1.2.55"
+bindgen = "0.72.1"
+
+[dependencies]
+
+
+[features]
+simple = []
+robust = []
+
+shake = []
+haraka = []
+sha2 = []
+
+128f = []
+128s = []
+192s = []
+192f = []
+256s = []
+256f = []
